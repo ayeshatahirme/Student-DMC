@@ -38,12 +38,11 @@ namespace DMC
                 "VALUES(@reg_num, @name, @degree)";
 
             SqlCommand cmd = new SqlCommand(query, con);
-
+            
             cmd.Parameters.AddWithValue("@reg_num", regno.Text);
             cmd.Parameters.AddWithValue("@name", nametxt.Text);
             cmd.Parameters.AddWithValue("@degree", degreetxt.Text);
-
-
+            
             cmd.ExecuteNonQuery();
             MessageBox.Show("Record added!");
 
@@ -129,7 +128,7 @@ namespace DMC
         public void searchData(string valueToFind)
         {
 
-            string searchQuery = "SELECT * FROM COURSE_DETAILS WHERE FK_REG_NUM LIKE '%" + valueToFind + "%'";
+            string searchQuery = "SELECT COURSE_ID, COURSE_NAME, CRDHRS, MARKS FROM COURSE_DETAILS WHERE FK_REG_NUM LIKE '%" + valueToFind + "%'";
 
             SqlDataAdapter adapter = new SqlDataAdapter(searchQuery, con);
             DataTable table = new DataTable();
@@ -137,6 +136,6 @@ namespace DMC
             dataGridView1.DataSource = table;
 
         }
-
+        
     }
 }

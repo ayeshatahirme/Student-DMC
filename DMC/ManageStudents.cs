@@ -28,6 +28,7 @@ namespace DMC
 
         private void button2_Click(object sender, EventArgs e)
         {
+            showData();
             this.Hide();
             AddStudent s1 = new AddStudent();
             s1.Show();
@@ -47,18 +48,20 @@ namespace DMC
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-6FG9FQD;Initial Catalog=StudentDMC;Integrated Security=True");
+            showData();
+        }
 
-            string searchQuery = "SELECT STUDENT_DETAILS.REG_NUMBER, STUDENT_DETAILS.NAME, STUDENT_DETAILS.DEGREE, COURSE_DETAILS.COURSE_NAME FROM [dbo].[STUDENT_DETAILS] inner join [dbo].[COURSE_DETAILS]";
-            searchQuery += "on STUDENT_DETAILS.REG_NUMBER = COURSE_DETAILS.FK_REG_NUM";
-            SqlCommand cmd = new SqlCommand(searchQuery, con);
-            con.Open();
+        public void showData()
+        {
 
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            string searchQuery = "SELECT * FROM STUDENT_DETAILS";
+
+            SqlDataAdapter adapter = new SqlDataAdapter(searchQuery, con);
             DataTable table = new DataTable();
             adapter.Fill(table);
             dataGridView1.DataSource = table;
-            con.Close();
+
         }
+
     }
 }

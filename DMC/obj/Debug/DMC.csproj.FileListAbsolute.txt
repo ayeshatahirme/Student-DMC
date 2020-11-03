@@ -11,3 +11,16 @@ C:\Users\Ayesha\Desktop\DMC\DMC\obj\Debug\DMC.pdb
 C:\Users\Ayesha\Desktop\DMC\DMC\obj\Debug\DMC.AddCourse.resources
 C:\Users\Ayesha\Desktop\DMC\DMC\obj\Debug\DMC.AddStudent.resources
 C:\Users\Ayesha\Desktop\DMC\DMC\obj\Debug\DMC.ManageStudents.resources
+C:\Users\Ayesha\Desktop\Student-DMC\DMC\bin\Debug\DMC.exe.config
+C:\Users\Ayesha\Desktop\Student-DMC\DMC\bin\Debug\DMC.exe
+C:\Users\Ayesha\Desktop\Student-DMC\DMC\bin\Debug\DMC.pdb
+C:\Users\Ayesha\Desktop\Student-DMC\DMC\obj\Debug\DMC.csprojAssemblyReference.cache
+C:\Users\Ayesha\Desktop\Student-DMC\DMC\obj\Debug\DMC.AddCourse.resources
+C:\Users\Ayesha\Desktop\Student-DMC\DMC\obj\Debug\DMC.AddStudent.resources
+C:\Users\Ayesha\Desktop\Student-DMC\DMC\obj\Debug\DMC.Form1.resources
+C:\Users\Ayesha\Desktop\Student-DMC\DMC\obj\Debug\DMC.ManageStudents.resources
+C:\Users\Ayesha\Desktop\Student-DMC\DMC\obj\Debug\DMC.Properties.Resources.resources
+C:\Users\Ayesha\Desktop\Student-DMC\DMC\obj\Debug\DMC.csproj.GenerateResource.cache
+C:\Users\Ayesha\Desktop\Student-DMC\DMC\obj\Debug\DMC.csproj.CoreCompileInputs.cache
+C:\Users\Ayesha\Desktop\Student-DMC\DMC\obj\Debug\DMC.exe
+C:\Users\Ayesha\Desktop\Student-DMC\DMC\obj\Debug\DMC.pdb

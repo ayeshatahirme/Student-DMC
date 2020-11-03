@@ -28,17 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageStudents));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.REG_NUMBER = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DEGREE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.COURSES = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.edit_btn = new System.Windows.Forms.Button();
             this.edit_btn_icon = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.REG_NUMBER = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DEGREE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,47 +46,26 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.REG_NUMBER,
             this.NAME,
-            this.DEGREE,
-            this.COURSES});
+            this.DEGREE});
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.dataGridView1.Location = new System.Drawing.Point(189, 106);
+            this.dataGridView1.Location = new System.Drawing.Point(228, 102);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.DividerHeight = 1;
-            this.dataGridView1.Size = new System.Drawing.Size(446, 244);
+            this.dataGridView1.Size = new System.Drawing.Size(340, 244);
             this.dataGridView1.TabIndex = 127;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // REG_NUMBER
-            // 
-            this.REG_NUMBER.HeaderText = "Registration Number";
-            this.REG_NUMBER.Name = "REG_NUMBER";
-            // 
-            // NAME
-            // 
-            this.NAME.HeaderText = "Name";
-            this.NAME.Name = "NAME";
-            // 
-            // DEGREE
-            // 
-            this.DEGREE.HeaderText = "Degree";
-            this.DEGREE.Name = "DEGREE";
-            // 
-            // COURSES
-            // 
-            this.COURSES.HeaderText = "Courses";
-            this.COURSES.Name = "COURSES";
             // 
             // label4
             // 
@@ -107,7 +85,7 @@
             this.edit_btn.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edit_btn.ForeColor = System.Drawing.Color.White;
             this.edit_btn.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.edit_btn.Location = new System.Drawing.Point(509, 367);
+            this.edit_btn.Location = new System.Drawing.Point(442, 363);
             this.edit_btn.Name = "edit_btn";
             this.edit_btn.Size = new System.Drawing.Size(126, 42);
             this.edit_btn.TabIndex = 128;
@@ -124,7 +102,7 @@
             this.edit_btn_icon.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edit_btn_icon.ForeColor = System.Drawing.Color.White;
             this.edit_btn_icon.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.edit_btn_icon.Location = new System.Drawing.Point(488, 376);
+            this.edit_btn_icon.Location = new System.Drawing.Point(421, 372);
             this.edit_btn_icon.Name = "edit_btn_icon";
             this.edit_btn_icon.Size = new System.Drawing.Size(27, 23);
             this.edit_btn_icon.TabIndex = 129;
@@ -139,13 +117,31 @@
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.Location = new System.Drawing.Point(189, 367);
+            this.button1.Location = new System.Drawing.Point(228, 363);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(69, 37);
             this.button1.TabIndex = 146;
             this.button1.Text = "Show";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // REG_NUMBER
+            // 
+            this.REG_NUMBER.DataPropertyName = "REG_NUMBER";
+            this.REG_NUMBER.HeaderText = "Registration Number";
+            this.REG_NUMBER.Name = "REG_NUMBER";
+            // 
+            // NAME
+            // 
+            this.NAME.DataPropertyName = "NAME";
+            this.NAME.HeaderText = "Name";
+            this.NAME.Name = "NAME";
+            // 
+            // DEGREE
+            // 
+            this.DEGREE.DataPropertyName = "DEGREE";
+            this.DEGREE.HeaderText = "Degree";
+            this.DEGREE.Name = "DEGREE";
             // 
             // ManageStudents
             // 
@@ -171,13 +167,12 @@
 
         #endregion
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn REG_NUMBER;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NAME;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DEGREE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn COURSES;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button edit_btn;
         private System.Windows.Forms.Button edit_btn_icon;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn REG_NUMBER;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NAME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DEGREE;
     }
 }
